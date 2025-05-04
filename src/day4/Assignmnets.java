@@ -156,7 +156,7 @@ public class Assignmnets {
 			}
 			
 			else if(n ==0) {
-				System.out.println(Zero);
+				System.out.println("Zero");
 			}
 			
 			else {
@@ -240,7 +240,7 @@ public class Assignmnets {
 							 if(ch=='A' || ch =='E' || ch =='I' || ch =='O' || ch=='U') 
 							 {
 								 
-								 System.out .pritln("This is upperase vowel");
+								 System.out .println("This is upperase vowel");
 							 }
 						 }
 					 }
