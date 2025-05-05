@@ -92,16 +92,20 @@ public class AssignmentLoop {
             	  
             	  int reverse = 0;
             	  
-            	  int i=1;
-            	  
-            	  int n=123;
-            	  while(i<=n) {
-            		  int lastdigit=n/10;
-            		  reverse= rev
+            	  int n= 2345;
+            	
+            	  while(n>0) {
+            		  int lastdigit = n %10;
+            		  
+            		  reverse = reverse * 10 +lastdigit;
+            		  
+            		  n = n/10;
             		  
             		  
             		  
             	  }
+            	  
+            System.out.println("The reverse of given number is :" +reverse);
 				
 			}	 
          }
