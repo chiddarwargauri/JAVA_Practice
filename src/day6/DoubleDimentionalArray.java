@@ -22,6 +22,8 @@ public class DoubleDimentionalArray {
 	      
 	      //================================= Extract element in the two dimentional array ===========================================================
 	      
+	     
+	      /*
 	      System.out.println("------------------------------------------Read Exlements in array using nested for loop ---------------------------------");
 	      
 	      for (int r =0 ; r <arr.length ; r++) 
@@ -32,6 +34,22 @@ public class DoubleDimentionalArray {
     	    	  }
 	    	  System.out.println(" ");
 	      }
+	      */
+	      
+	      System.out.println("------------------------------------------Read Exlements in array using enhance / for each  nested for loop ---------------------------------");
+
+	      
+	      for(int x[]:arr) 
+	      {
+	    	 for(int num:x)
+	    	 {
+	    		 System.out.print(num+ "\t");
+	    	 } 
+	    	 
+	    	 System.out.println(" ");
+	       	 System.out.println(" ");
+	      }
+	      
 	    
 	    
 	}
