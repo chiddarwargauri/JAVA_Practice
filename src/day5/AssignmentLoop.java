@@ -109,7 +109,79 @@ public class AssignmentLoop {
 				
 			}	 
          }
-	
+	//----------------------------------------------------------------------------------------------------------------
+         //6.  Write a Java program to check if a given number is a prime number using a while loop. 
+        
+         public class Prime
+         {
+        	 public static void main(String[] args)
+        	 
+        	 {
+				     int n=4;
+				     int i = 2;
+				     
+				     boolean isPrime =true;
+				     while(i<n)
+				     {
+				    	 
+				    	 if(n%i==0) 
+				    	 {
+				    		 isPrime =false;
+				    				 break;
+				    	 }
+				    	 
+				    	 i++;
+				    	 
+				    	
+				     }
+				     
+				     if(isPrime) 
+			    	 {
+			    		System.out.println("this nmber is prime"); 
+			    	 }
+			    	 
+			    	 else 
+			    	 {
+			    		 System.out.println("This number is not prime ");
+			    	 }
+			    	 
+				 
+				 
+			}
+         }
+         
+     //---------------------------------------------------------------------------------------------------------------
+         
+         
+         
+         //5.  Write a Java program to count the number of digits in a given number using a while loop. 
+         
+         
+         public class CountDigit
+         {
+        	 public static void main(String[] args)
+        	  {
+        		 
+        		 int count = 0;
+        		 int num = 123467999;
+        		 
+        		 while(num>0) 
+        		  {
+        			 num = num / 10;
+        			 
+        			 count ++;
+        			 
+        		  }
+        		 
+        		 System.out.println("the number of digit in the given number is : " +count);
+				
+			  }
+         }
+         
+     //---------------------------------------------------------------------------------------------------------------
+         
+         
+         
 	//----------------------------------------------------------------------------------------------------------------
 	
 }
