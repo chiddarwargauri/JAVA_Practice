@@ -180,7 +180,98 @@ public class AssignmentLoop {
          
      //---------------------------------------------------------------------------------------------------------------
          
+         //8.  Write a Java program to calculate the sum of digits of a given number using a while loop. 
+         public class SumDigit
+         {
+        	 public static void main(String[] args)
+        	 
+        	 {
+        		 System.out.println("___________________________________________calculate the sum of digits of a given number__________________________________________");
+        		 
+        		 int  num= 5419;
+        		 
+        		 int sum= 0;
+        		 
+        		 while(num>0)
+        		 {
+        			 int lastdigit = num%10;
+        			 sum +=lastdigit;
+        			 num=num/10;
+        			 
+        		 }
+        		 
+        		System.out.println("the sum of digits of a given number is: "+sum);
+				
+			}
+         }
          
+         
+     //--------------------------------------------------------------------------------------------------------------
+         
+         // 11.  Write a Java program to check if a given number is a palindrome using a while loop.
+         
+         
+           public class Palindrome
+           {
+        	   public static void main(String[] args)
+        	   
+        	   {
+        		   
+        		int num = 1145;
+        		int original ;
+        		original=num;
+        	
+        		int reverse = 0;
+        		
+        		while(num>0) {
+        			
+        			int lastdigit = num% 10;
+        			reverse = reverse *10 +lastdigit;
+        			num=num/10;
+        		}
+        		
+        		   if(reverse == original) 
+        		   {
+        			   System.out.println(true);
+        		   }
+        		   else
+        		   {
+        			   System.out.println(false);
+        		   }
+				
+		     	}
+           }
+           
+      //-------------------------------------------------------------------------------------------------------------
+         // *    10. Write a Java program to generate the first 10 numbers of the Fibonacci series using a while loop.
+           //F(n) = F(n-1) + F(n-2)
+
+           public class Fibonacci{
+        	   public static void main(String[] args) {
+				int n =2 ;
+				 if(n==0) {
+					 System.out.println("the fibonacii of 0 : 0");
+					 
+				 }
+				 
+				 if(n==1) {
+					 System.out.println("the fibonacii of 1: 1");
+					 
+				 }
+				
+				while(n<=10) 
+				{    
+					
+					n= (n-1) +(n-2);
+					n++;
+				}
+				System.out.println(n);
+				
+			}
+           }
+
+           
+
          
 	//----------------------------------------------------------------------------------------------------------------
 	
