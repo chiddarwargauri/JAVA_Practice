@@ -1,66 +1,66 @@
 package day7;
-import java.util.Arrays;
 
-public class ObjectTypeOfArray {
-	public static void main(String[] args) {
-		Object obj[] =new Object[5] ;
-		 
-		obj[1] =10;
-		obj[0]=10.5;
-		obj[2]='A';
-		obj[3]="charecter";
-		obj[4]=true;
+import java.util.Arrays;
+public class ObjectTypeOfArray{
+	
+	public static void main(String[] args)
+	{
 		
-		//+++++++++++++++++++++++++++++++++++++++++++++++++
-		// --------------------Get specific data -------------------------
-		
-		System.out.println("----------------Get specific data -------------");
-		
-		System.out.println(obj[0]);
-		
-		// ++++++++++++++++++++++++++++++++++++++++++++++++++++
-		
-		//-----------------------------Get the type of data --------------
-		System.out.println("-------------Get the type of data ----------");
+		Object o[]=new Object[5];//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>It can store a Object type of s data like Integer,Double, Boolean ,Character
+		o[1] = 12;
+		o[0]='A';
+		o[2]=12.9;
+		o[3]="Gauri";
+		o[4]=true;
 		
 		
-		System.out.println(obj[0].getClass().getSimpleName());
+		// read a specific type of a data
 		
-		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		System.out.println(o[3]);//"Gauri"
 		
-		//-----------------------Extract the value in a array ++++++++++++++++++
+		System.out.println("Type:---->>>>>>" +o[2].getClass().getSimpleName());//DOUBLE
+		
+		System.out.println("Class --->>>>" +o[4].getClass() );
 		
 		
-		//-------------------------------For Each Loop -----------------------------
+		// read a array using simple for loop 
 		
-		System.out.println("-------------------For Each Loop -------------");
+		//-----------------------------------------------
 		
-		for(Object i :obj)
+          System.out.println(">>>>>>>>>>>>>>>>>>>>>>>> read a array using simple for loop <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+		
+		for(int i=0;i<o.length;i++) 
 		{
-			
-			System.out.println(i);
-			
+			System.out.println(o[i]);
+		}
+		
+		//------------------------------------------------------
+		
+		
+		//Read the data using for each loop 
+		
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>> read a array using for each loop  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+		
+		
+		for(Object var:o)
+		{
+		   System.out.println(var );	
+		   
 		}
 		
 		
-		// ----------------------Simple for loop -----------------------------------
-		
-		System.out.println("-------------------Simple for loop ------------------------");
+		// Read the data without using array
 		
 		
-		for(int j=0;j<obj.length;j++)
-		{
-			System.out.println(obj[j]);
-		}
-      //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>.............Read The data without using for loop .........<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 		
-		//------------------read a array without using the loop 
+		System.out.println(Arrays.toString(o));
 		
-		System.out.println(Arrays.toString(obj));
+		
+
+		
+		
 		
 		
 	}
-	
-	
-
 }
