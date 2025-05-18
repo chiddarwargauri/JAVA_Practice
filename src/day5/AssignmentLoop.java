@@ -270,9 +270,132 @@ public class AssignmentLoop {
 			}
            }
 
+           //-----------------------------------------------------------------------------------------------------
            
+           //8.  Write a Java program to calculate the sum of digits of a given number using a while loop. 
 
-         
+       public class CalculateSumDigit
+       {
+    	   public static void main(String[] args) {
+			int sum= 0 ;
+			int num= 1234 ;
+		      while(num>0) {
+		    	  
+		    	  int lastdigit = num% 10;
+		    	  
+		    	  sum=sum+lastdigit ;
+		    	   
+		    	  
+		    	  num = num/10;
+		    	  
+		      }
+		      
+		      System.out.println(sum);
+		}
+       }
+       
+       // -----------------------------------------------------------------------------------------------------------
+       
+       //9.  Write a Java program to find the largest digit in a given number using a while loop. 
+     
+       
+       public class LargestDigitInGivenNumber
+       {
+    	   public static void main(String[] args) 
+    	   
+    	   {
+		  int num = 1234;
+		  int maxdigit= 0;
+		  
+		  while(num>0) 
+		  {
+			  int lastdigit = num%10;
+			  
+			  if(lastdigit>maxdigit) {
+				  
+				  maxdigit = lastdigit;
+			  }
+			  
+			  num=num/10;
+			  
+		  }
+			 
+		  System.out.println(maxdigit);
+			
+    		   
+	      	}
+       }
+       
+       //--------------------------------------------------------------------------------------------------------
+       
+       //12.  Write a Java program to calculate the sum of all even numbers from 1 to N using a while loop. 
+
+       
+       public class SumOfallEvenNumbers
+       {
+    	   
+    	  public static void main(String[] args) {
+			int n=10 ;
+			int sum = 0;
+			int i =0;
+			while(i<=10) {
+				
+				if(i%2==0) {
+					
+					sum=sum+i;
+					
+				}
+				
+				i++;
+			}
+			
+			System.out.println(sum);
+		}
+    	   
+    	   
+       }    
+       
+     //---------------------------------------------------------------------------------------------------------------
+       
+       //13.  Write a Java program to calculate the sum of all odd numbers from 1 to N using a while loop.
+       
+       public class SumOfAllOddNumber
+       
+       {
+    	
+    	   public static void main(String[] args)
+    	   
+    	   {
+    		   
+    		   int n= 30;
+    		   
+    		  int  sum=0;
+    		   
+    		   int i = 1 ;
+    		   
+    		   
+    		   while(i<=n) {
+    			   
+    			   if(i%2!=0) 
+    			   
+    			   {
+    				
+    				  
+    				   sum=sum+i;
+    				   
+    				   
+    				   
+    			   }
+    			   
+    			   i++;
+    			   
+    		   }
+			System.out.println(sum);
+		}
+    	   
+       }
+
+       
 	//----------------------------------------------------------------------------------------------------------------
 	
 }
