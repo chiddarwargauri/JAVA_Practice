@@ -55,7 +55,7 @@ public class Assinment_on_the_or_loop {
 	}
 	
 	//-----------------------------------------------------------------------------
-	
+
 	//2. Print Even Numbers from 1 to 20 
 
 	
