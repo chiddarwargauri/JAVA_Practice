@@ -44,17 +44,20 @@ public class ShoppingCart {
 	public static void main(String[] args) {
 		ShoppingCart obj=new ShoppingCart();
 		
-		//---------Single parameter--------
+		//---------Single Argument--------
 		//obj.addItem(23.23);//Argument
 		//obj.display();
-		//--------Triple parameter-------
+		
+		
+		
+		//--------Triple Arguments-------
 		
 		/*obj.addItem3(12.4, 45.44, 23.4);
 		
 		obj.display();
 		*/
 		
-		//--------Multiple parameter ------
+		//--------Multiple Arguments------
 		
 		
 		obj.addMultipleItems(12.44, 454.23,355.23,23.45);
