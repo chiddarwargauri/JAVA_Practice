@@ -18,9 +18,23 @@ public class StaticKeywordDemo {
 	
 	void desplay() {
 		System.out.println(+department);
-		System.out.println(roll_no);//invalid 
+		System.out.println(roll_no);
 		
 	}
+	
+  public static void main(String[] args) 
+  
+  {
+	  
+	  StaticKeywordDemo s = new StaticKeywordDemo();
+	  
+	  departmentdetails();
+	  
+	  
+	  s.desplay();
+	  
+	
+}
 	
 	
 
